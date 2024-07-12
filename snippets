@@ -1,0 +1,23 @@
+
+	/// ----- This lists all users on github
+	// users, _, err := client.Users.ListAll(context.Background(), nil)
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+
+	/// ------ This only lists public repositories
+	// repos, _, err := client.Repositories.List(context.Background(), "chrisjpalmer", &github.RepositoryListOptions{
+	// 	Type:       "private",
+	// 	Visibility: "private",
+	// })
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+
+	// fmt.Println("Got public repos")
+	// for _, r := range repos {
+	// 	fmt.Println(*r.FullName)
+	// }
+
+	/// ----- This results in a 403
+	// repos, _, err = client.Apps.ListUserRepos(context.Background(), installationID, &github.ListOptions{})
